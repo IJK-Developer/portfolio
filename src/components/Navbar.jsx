@@ -50,7 +50,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center">
         {/* Logo */}
         <div  className={` bg-cover ${reload ? 'fade-in' : ''}`}>
-          <img src="src/assets/logo.png" alt="logo " className='w-35 h-10 object-cover relative right-12' />  
+          <img src="/src/assets/logo.png" alt="logo " className='w-35 h-10 object-cover relative right-12' />  
         </div>
         
         {/* Navbar Links */}
