@@ -58,7 +58,7 @@ const Hero = () => {
 
 
             <div className={`flex gap-9 justify-center items-center hero-button ${reload ? 'fade-in' : ''}`}>
-                <button className= "bg-transparent border-1 border-[#ffffff34] text-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition">
+                <button className= "font-medium bg-transparent border-1 border-[#ffffff37] text-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition">
                     Let's Connect
                 </button>
                 <p className="font-light text-[#bfbab9e7]">hello@davehellnah.com</p>

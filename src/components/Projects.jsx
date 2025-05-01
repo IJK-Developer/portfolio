@@ -38,17 +38,21 @@ const Projects = () => {
       imageUrl: 'path-to-your-image.jpg',
       tags: ['SaaS Platform', 'Design System', 'UX/UI Design'],
     },
-    // Add more projects here
   ];
 
   return (
     <section
       id="projects-section"
-      className={`py-12 bg-black text-white px-6 md:px-20 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+      className={`py-12 mt-30 bg-black text-white px-6 md:px-20 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
     >
-      <h2 className="text-4xl sm:text-4xl lg:text-5xl font-bold mb-8 text-center glow-text py-8">Projects</h2>
+      {/* Title with Shorter Lines */}
+      <div className="flex items-center justify-center mb-8">
+        <div className="w-45 border-t-2 border-white mr-4"></div>
+        <h2 className="text-4xl sm:text-4xl lg:text-5xl font-bold text-center glow-text">Projects</h2>
+        <div className="w-45 border-t-2 border-white ml-4"></div>
+      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
         {projects.map((project, index) => (
           <div
             key={index}
