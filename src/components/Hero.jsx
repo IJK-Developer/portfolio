@@ -28,7 +28,7 @@ const Hero = () => {
             {/* <ParticlesBackground className={`particles ${reload ? 'animate' : ''}`} /> */}
 
             {/* Hero Content */}
-            <div className={`hero-text ${reload ? 'fade-in' : ''}`}>
+            <div className={` hero-text ${reload ? 'fade-in' : ''}`}>
                 <h1 className="text-3xl sm:text-4xl lg:text-6xl font-playfair mb-4">
                     I help founders turn ideas <br />
                     <span className="font-bold">into seamless </span>

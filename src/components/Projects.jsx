@@ -46,13 +46,13 @@ const Projects = () => {
       className={`py-12 mt-30 bg-black text-white px-6 md:px-20 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
     >
       {/* Title with Shorter Lines */}
-      <div className="flex items-center justify-center mb-8">
+      <div className="flex items-center justify-center mb-20 ">
         <div className="w-45 border-t-2 border-white mr-4"></div>
         <h2 className="text-4xl sm:text-4xl lg:text-5xl font-bold text-center glow-text">Projects</h2>
         <div className="w-45 border-t-2 border-white ml-4"></div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -61,10 +61,10 @@ const Projects = () => {
             <img
               src={project.imageUrl}
               alt={project.title}
-              className="w-full h-56 object-cover rounded-xl"
+              className="w-full h-56 ob ject-cover rounded-xl"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-transparent to-transparent p-4">
-              <h3 className="text-xl font-bold glow-text">{project.title}</h3>
+              <h3 className="text-xl font-bold">{project.title}</h3>
               <p className="text-sm text-[#bfbab9e7] mb-4">{project.description}</p>
               <div className="flex gap-2">
                 {project.tags.map((tag, idx) => (
