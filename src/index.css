@@ -1,0 +1,30 @@
+@import "tailwindcss";
+html{
+background-color:black;
+
+
+font-family: "Outfit", sans-serif;
+font-weight: 600;
+}
+
+/* Apply dark gradient background to any element */
+.dark-bg-color
+ {
+  background: linear-gradient(135deg, #1c1c1c, #3b3b3b, #101010);
+}
+
+
+
+/* Add this to your index.css or global stylesheet */
+.text-gradient-down {
+  background: linear-gradient(to bottom,  rgb(255, 255, 255) ,rgba(207, 206, 206, 0.539)); /* Black at top, white at bottom */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  color: transparent; /* Make the text transparent to show the gradient */
+}
+.text-gradient-top {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, white 65%, white 100%);
+
+  -webkit-background-clip: text; /* Clip the gradient to the text */
+  color: transparent; /* Make the text transparent to show the gradient */
+}
+

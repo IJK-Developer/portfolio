@@ -1,0 +1,19 @@
+/* Add this in your index.css or hero.css */
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply fade-in effect to the navbar elements */
+  .fade-in {
+    animation: fadeIn 2s ease-out forwards;
+  }
+  

@@ -1,0 +1,107 @@
+
+  /* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Hero section elements */
+  .hero-text, .hero-button, .hero-contact {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .hero-text {
+    animation-delay: 0.5s; /* Delay for text */
+  }
+  
+  .hero-button {
+    animation-delay: 1s; /* Delay for button */
+  }
+  
+  .hero-contact {
+    animation-delay: 1.5s; /* Delay for contact */
+  }
+  
+  /* Optional: Add particles or any other dynamic elements */
+  @keyframes particlesAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .particles {
+    animation: particlesAnimation 2s ease-in-out forwards;
+  }
+  /* Add this to your hero.css or a global CSS file */
+/* Make the hand emoji hidden by default */
+.hand-wave {
+opacity: 0;
+transition: opacity 0.3s ease-in-out; /* Smooth transition */
+position: absolute; /* Absolute position relative to image */
+bottom: 0; /* Position the emoji at the bottom of the image */
+right: 0; /* Position the emoji at the right of the image */
+font-size: 2rem; /* Adjust the size of the emoji */
+  }
+  
+  /* When the image is hovered, show the hand emoji and trigger the animation */
+  .image-capsule:hover .hand-wave {
+opacity: 1;
+animation: wave 1s ease-in-out infinite;
+  }
+/* Hover scale effect 
+img:hover {
+    transform: scale(1.1);
+    animation: wave 0.5s ease-in-out forwards;
+  }
+  */
+  /* Animation to simulate a waving hand */
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.285); /* Black background with 60% opacity */
+    z-index: 0; /* Place it behind the content */
+  }
+
+/* Gradient Overlay at the bottom of Hero section */
+.hero-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Adjust height of the gradient overlay */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.098), rgba(0, 0, 0, 0.8)50%); /* Blackish gradient */
+    z-index: -1; /* Ensure it's on top of the Hero content but behind About section */
+  }
+  

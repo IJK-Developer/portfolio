@@ -1,0 +1,8 @@
+@import "tailwindcss";
+/* Glow effect for the text */
+.glow-text {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.174), 0 0 20px rgba(255, 255, 255, 0.174), 0 0 30px rgba(255, 255, 255, 0.324);
+}
+.text-glow-gradient {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.053), 0 0 20px rgba(255, 255, 255, 0.043), 0 0 30px rgba(255, 255, 255, 0)
+}
